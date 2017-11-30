@@ -1,6 +1,6 @@
 {
   "name": "camera-mock",
-  "app_id": "",
+  "app_id": "69d3c911",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

@@ -10,15 +10,15 @@ export class AppProviders {
     public static getProviders() {
         let providers;
  
-        if(document.URL.includes('https://') || document.URL.includes('http://')){
-          // Use browser providers
-          providers = [
-            StatusBar,
-            SplashScreen,
-            {provide: Camera, useClass: CameraMock},
-            {provide: ErrorHandler, useClass: IonicErrorHandler}
-          ];
-        } else {
+        // if(document.URL.includes('https://') || document.URL.includes('http://')){
+        //   // Use browser providers
+        //   providers = [
+        //     StatusBar,
+        //     SplashScreen,
+        //     {provide: Camera, useClass: CameraMock},
+        //     {provide: ErrorHandler, useClass: IonicErrorHandler}
+        //   ];
+        // } else {
           // Use device providers
           providers = [
             StatusBar,
@@ -26,7 +26,7 @@ export class AppProviders {
             Camera,
             {provide: ErrorHandler, useClass: IonicErrorHandler}
           ]; 
-        }
+        // }
         return providers;
     }
 }
